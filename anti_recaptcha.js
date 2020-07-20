@@ -49,8 +49,6 @@ async function antiCaptcha(Runtime) {
 (async () => {
     let client;
     try{
-        await timeout(3000)
-
         client = await CDP();
 
         const {Network, Page, Runtime, DOM} = client;
